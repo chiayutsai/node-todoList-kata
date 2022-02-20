@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "49e6f211-07c7-47cb-b7a0-44bddd5c24ed",
+		"name": "todoList - Heroku - kata4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "659c236c-e5b4-4212-b0ef-41055afe1e3d",
+					"host": [
+						"659c236c-e5b4-4212-b0ef-41055afe1e3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qq\":\"買手機\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serene-temple-10370.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"serene-temple-10370",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://serene-temple-10370.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"serene-temple-10370",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"aa\":\"修改內容1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serene-temple-10370.herokuapp.com/todos/50f67bf7-f583-4c1c-9013-b7e9942b34b9",
+					"protocol": "https",
+					"host": [
+						"serene-temple-10370",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"50f67bf7-f583-4c1c-9013-b7e9942b34b9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
